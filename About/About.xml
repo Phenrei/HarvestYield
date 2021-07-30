@@ -1,21 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[SYR] Harvest Yield</name>
-    <author>Syrchalis</author>
+    <name>[SYR] Harvest Yield (1.3)</name>
+    <author>Arof, original by Syrchalis</author>
     <supportedVersions>
         <li>1.0</li>
         <li>1.1</li>
         <li>1.2</li>
+		<li>1.3</li>
     </supportedVersions>
-	<url>https://ludeon.com/forums/index.php?topic=43449</url>
-    <description>You think you know what the stat "Plant Harvest Yield" does? Well, let me surprise you - it does NOT increase the amount you get when you harvest plants, like "Mining Yield" does for ores.
+	<url>https://github.com/Phenrei/HarvestYield</url>
+    <description>Simple update (literally just a recompile of the existing code) for 1.3, should still be compatible with older versions, but if not the original is still here: https://steamcommunity.com/sharedfiles/filedetails/?id=1461790308
+	
+	All credit for base code to Syrchalis of course, and this will be unlisted if it is updated.
+	
+	Original description:
+	
+	You think you know what the stat "Plant Harvest Yield" does? Well, let me surprise you - it does NOT increase the amount you get when you harvest plants, like "Mining Yield" does for ores.
 
 It merely gives you a chance to fail below 100%, above 100% you do not gain anything.
 
 This changes now! This small C# patch changes the method when harvesting plants so that below 100% nothing changes (you still have a chance to fail, but get 100% of the amount IF you succeed) - but above 100% you get more from the plant. If you have 177% plant harvest yield and the plant usually gives 10 berries, then you now get 17 or 18 (random).
 
-Important: This mod removes the max values from all "yield" stats. This includes: MiningYield, AnimalGatherYield, PlantHarvestYield, ButcheryFleshEfficiency and ButcheryMechanoidEfficiency. Meaning those stats can now be more than 100%. If you don't wish this for any of these stats, go into HarvestYieldPatch/Patches/HarvestYieldXMLPatch.xml and remove the defNames of the stats you don't want edited.</description>
-    <packageId>syrchalis.harvestyieldpatch</packageId>
+Important: This mod removes the max values from all "yield" stats. This includes: MiningYield, AnimalGatherYield, PlantHarvestYield, ButcheryFleshEfficiency and ButcheryMechanoidEfficiency. Meaning those stats can now be more than 100%. Settings for this are in the mod settings menu.</description>
+    <packageId>arof.syrchalis.harvestyieldpatch.continued</packageId>
     <modDependencies>
     <li>
         <packageId>brrainz.harmony</packageId>
